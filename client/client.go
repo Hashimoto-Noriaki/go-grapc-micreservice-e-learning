@@ -5,7 +5,7 @@ import (
 	"log"
 	"time"
 
-	pb "github.com/yourusername/e-learning/studentpb"
+	pb "github.com/Hashimoto-Noriaki/go-grpc-microservice-e-learning/studentpb" 
 	"google.golang.org/grpc"
 )
 
