@@ -1,7 +1,7 @@
 syntax = "proto3";
 
 package student;
-option go_package = "github.com/yourusername/e-learning/studentpb";
+option go_package = "github.com/Hashimoto-Noriaki/e-learning/studentpb";
 
 message Student {
   string id = 1;
