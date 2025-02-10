@@ -18,8 +18,8 @@ type server struct {
 func (s *server) GetStudent(ctx context.Context, req *pb.GetStudentRequest) (*pb.GetStudentResponse, error) {
 	student := &pb.Student{
 		Id:    req.GetId(),
-		Name:  "Taro Yamada",
-		Email: "taro@example.com",
+		Name:  "犬",
+		Email: "pochi@example.com",
 	}
 
 	return &pb.GetStudentResponse{Student: student}, nil
