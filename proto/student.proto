@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package student;
+option go_package = "github.com/yourusername/e-learning/studentpb";
+
+message Student {
+  string id = 1;
+  string name = 2;
+  string email = 3;
+}
+
+message GetStudentRequest {
+  string id = 1;
+}
+
+message GetStudentResponse {
+  Student student = 1;
+}
+
+service StudentService {
+  rpc GetStudent(GetStudentRequest) returns (GetStudentResponse);
+}
